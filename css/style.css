@@ -15,7 +15,7 @@
     padding: 0;
    
 }
-body{max-width: auto; /* Define a largura máxima do elemento pai */
+body{max-width: 2000; /* Define a largura máxima do elemento pai */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex;
   flex-direction: row;
