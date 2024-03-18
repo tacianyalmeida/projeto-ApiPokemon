@@ -1,4 +1,3 @@
-
 :root{
     background-color:#0D0707;
     --font-color: #0D0707;
@@ -6,16 +5,17 @@
     --rosa-200: #DA8EC0;
     --cinza-300:#B9BEBC;
     --azul-400: #3090E0;
-    
+   
 }
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
+   
 }
-body{max-width: 1400px; /* Define a largura máxima do elemento pai */
+body{max-width: auto; /* Define a largura máxima do elemento pai */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: flex;
   flex-direction: row;
@@ -25,17 +25,19 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
   height: auto;
     }
 
+
 .header{
     top: 0;
    position: relative;
     color: black;
     padding: 15px;
-    width:  auto;
+    width:  100%;
     height: 100px;
     background-color: var(--yellow-100);
     display: flex;
-    margin-bottom: 7px; 
+    margin-bottom: 7px;
 }
+
 
 .logo{
     flex-direction: column-reverse;
@@ -45,11 +47,11 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
     top: -0.2px;
      margin-left: 45px;
      object-fit: cover;
-    
-    
+   
+   
 }
     ul li{
-        
+       
         list-style-type: none;
         display: inline;
         font-size: 30px;
@@ -58,14 +60,15 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
         top: 30px;
         font-family:"Raleway", sans-serif;
          font-weight: 200;
-        
+       
         }
         .fan{
           top: 30px;  
         font-weight: bold;
        left: 260px;
        font-size: 32px;
-       } 
+       }
+
 
        .nav-button {
         z-index: 100%;
@@ -81,16 +84,19 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
         right: 0%;
         transform: translateY(-50%);
 
+
     }
 
 
-    .nav-button { 
+
+
+    .nav-button {
       right: 0%;
-      
+     
         color: var(--azul-400);
     }
-    
-    .overlay{ align-items: center; 
+   
+    .overlay{ align-items: center;
         width: 0;
         height: 500px;
         background-color:#E1A646;
@@ -100,9 +106,9 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
         top: 10px;
         overflow-x: hidden; /*o conteudo é cortado e nenhuma rolagem é permitida*/
         transition: all 0.5s;
-        
+       
     }
-        
+       
     .overlay-content{
         position: relative;
         top: 25%;
@@ -118,10 +124,10 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
         display: block;
         font-size: 30px;
         transition: 0.3s;
-    
+   
     }
     .overlay a:hover, .overlay a:focus{
-        color:var(--cinza-300)  ; 
+        color:var(--cinza-300)  ;
        
     }
     .overlay .closebtn{
@@ -133,17 +139,22 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
     z-index: 100%;}
 
 
+
+
      #titulo{
         text-decoration: none;
         color: white;
         font-size: 50px;
-    
+   
      }
+
 
      #sub-titulo{
         color:var(--rosa-200);
-        font-size: 35px;     
+        font-size: 35px;    
     text-decoration: none;}
+
+
 
 
       .hero{
@@ -157,7 +168,8 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
         padding: 0rem  -5rem;
         margin: auto;
         overflow: clip;
-        
+       
+
 
       }
       .hero-img-container{
@@ -165,20 +177,22 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
        column-count: 4; /* para alinhar as img em colunas de 4*/
        flex-direction: reverse;
        width: 50%;
-       border-radius: 0.5rem ; 
+       border-radius: 0.5rem ;
        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
        height: auto; /* Mantém a proporção da imagem */
        margin-top: 50px;
        z-index: 80%;
       }
 
+
      .caixa-azul{
        background-color: #3090E0;
        width: auto;
        height: 1000px; ;
-       top: 8%; 
+       top: 8%;
        left: 15%;
      }
+
 
      #paragrafo1{
         padding-top: 100px;
@@ -190,7 +204,7 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
         padding-right: 200px;
      }
      
-    
+   
     .video-container{
       align-items:center ;
       position: relative;
@@ -199,12 +213,14 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
       overflow: hidden;
     }
 
+
     .footer{
       align-items: center;
       display: flex;
       justify-content: space-evenly;
       position: relative;
       bottom: 0;
+
 
       margin-top: 50%;
       height: 300px ;
@@ -218,45 +234,53 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
     }
  @media only screen and (min-width: 768px) {
 
-  
+
+ 
  }  
+
 
  @media only screen and (max-width: 767px){
   .header{
     width: auto;
     height: 90px; ;
   }
-  
+ 
   #titulo{
    font-size: 25px;
   }
 
+
   #sub-titulo{
     font-size: 23px;
 
+
   }
-  
-  
+ 
+  .ficarEmColuna{
+  flex-direction: column;
+  }
   .hero-img-container{
     margin-top: 20px;
     width: 70%;
     margin-bottom: 2%;
-    
-    
+   
+   
   }
 
+
   .caixa-azul{
-    
+   
     height: auto;
   }
   #paragrafo1{
-    
+   
     height:auto;
     font-size: 25px;
     padding-top: 3px;
     padding-left: 1%;
     margin-bottom:2px ;
   }
+
 
   .video-container {
   position: absolute;
@@ -265,7 +289,7 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
   height: 80%;
   padding-bottom: 56.25%;
   text-align: center;
-  
+ 
  }
  .footer{
   top: auto;
@@ -273,18 +297,21 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
   padding: 10px;
   text-align: left;
 
-  
+
+ 
+
 
  }
  
 }
 @media only screen and (max-width:200px){
 
+
   .nav-button{
    left: 2px;
    z-index: 80%;
   }
-  
+ 
   .button .nav-button{
     left: 2px;
   }
@@ -297,5 +324,7 @@ body{max-width: 1400px; /* Define a largura máxima do elemento pai */
     height: 20px;
     width: 10px;
   }
-  
+ 
 }
+
+
