@@ -1,0 +1,27 @@
+:root{
+    background-color:#DA8EC0;
+    --font-color: #0D0707;
+    --yellow-100: #E1A646;
+    --rosa-200: #DA8EC0;
+    --cinza-300:#B9BEBC;
+    --azul-400: #3090E0;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100vh;
+}
+
+.tudo{
+    align-items: center;
+}
