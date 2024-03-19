@@ -1,4 +1,4 @@
-// 'https://pokeapi.co/api/v2/pokemon/'
+
 // 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png'
 // 'https://pokeapi.co/api/v2/pokemon?limit=15&offset=0'
 
